@@ -31,7 +31,6 @@ public class Automation_Test {
 					By.xpath("//section[@class='section section-macbook-air']//*[contains(text(),'Ligera')]"));
 			String expectedText = "Ligera como siempre.\n" + "Poderosa como nunca.";
 			Assert.assertEquals(actualText.getText(), expectedText);
-			System.out.println("Ligera... text is correct");
 			
 			// Click on the Search bar
 			WebElement searchIcon = driver.findElement(By.id("ac-gn-link-search"));
@@ -51,7 +50,6 @@ public class Automation_Test {
 			String actualTitle = driver.getTitle();
 			String expectedTitle = "iPhone XR - Apple (MX)";
 			Assert.assertEquals(actualTitle, expectedTitle);
-			System.out.println("Page title text is correct");
 			
 			// Validate options are displayed and enabled
 			boolean pantallaDisplayed = driver.findElement(By.xpath("//li[@class='ac-ln-menu-item']//*[contains(text(), 'Pantalla')]")).isDisplayed();
